@@ -137,7 +137,8 @@ $.ajax({
         var clicked = this.id.split("-"); 
         var NumberID = clicked[1]; 
         var Data = 'ToDelete='+ NumberID; 
-
+  d=0;
+        i=0;
         $.ajax({
             type: "POST", // HTTP метод  POST или GET
             url: "edit.php", //url-адрес, по которому будет отправлен запрос
